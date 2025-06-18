@@ -1,0 +1,415 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(180deg, #f4f4f4, #e6e6e6);
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #007bff;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-signin {
+    padding: 10px 18px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-signin:hover {
+    background: linear-gradient(90deg, #0056b3, #004494);
+    transform: scale(1.05);
+}
+
+/* Hero Section with Glassmorphism */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('c:/Users/kusuma saisri/OneDrive/Dokumen/travel2.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    color: white;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-learn {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #ff9800, #ff7300);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-learn:hover {
+    background: linear-gradient(90deg, #ff7300, #ff5700);
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features, .partners, .contact {
+    padding: 80px 10%;
+    text-align: center;
+    background: white;
+}
+
+.features h2, .partners h2, .contact h2 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Feature Cards */
+.feature {
+    display: inline-block;
+    margin: 20px;
+    width: 270px;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.4s ease-in-out;
+    transform: perspective(1000px) rotateY(0);
+}
+
+.feature:hover {
+    transform: perspective(1000px) rotateY(5deg) scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.feature img {
+    width: 75px;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 18px;
+    color: #444;
+}
+
+/* Partners Section */
+.partners {
+    background: linear-gradient(180deg, #f8f8f8, #e0e0e0);
+    padding: 80px 10%;
+}
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact button {
+    padding: 14px 26px;
+    background: white;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #f4f4f4;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .features, .partners, .contact {
+        padding: 50px 5%;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 90%;
+    }
+}
+/* Partners Section */
+.partners {
+    background: linear-gradient(180deg, #f8f8f8, #e0e0e0);
+    padding: 80px 10%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.partners h2 {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.partner-card {
+    width: 260px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(0, 123, 255, 0.1);
+    transition: 0.5s;
+    border-radius: 50%;
+    transform: translate(-50%, -90%);
+}
+
+.partner-card:hover::before {
+    transform: translate(-50%, -10%);
+}
+
+.partner-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.partner-card img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 4px solid #007bff;
+    transition: 0.3s;
+}
+
+.partner-card:hover img {
+    border-color: #ff9800;
+}
+
+.partner-card h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.partner-card p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* Services (Features) Section */
+.features {
+    padding: 80px 10%;
+    text-align: center;
+    background: rgb(255, 255, 255);
+}
+
+.features h2 {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature {
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 152, 0, 0.2);
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.feature:hover::after {
+    transform: scale(10);
+    opacity: 0;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 70px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.feature:hover img {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.feature h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #444;
+}
